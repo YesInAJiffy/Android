@@ -182,3 +182,106 @@ fun main() {
 }
 ```
 
+# Defining Functions
+## With NO return type
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/60b7d614-30c0-492b-96e6-68618be7c89f" />
+
+```kotlin
+fun main() {
+    birthdayGreeting()
+}
+
+fun birthdayGreeting() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+```
+
+## Returning Values
+<img width="678" alt="image" src="https://github.com/user-attachments/assets/2b40b354-e6e9-41df-b76e-351805021884" />
+
+By default, if you don't specify a return type, the default return type is Unit. Unit means the function doesn't return a value. Unit is equivalent to void return types in other languages (void in Java and C; Void/empty tuple () in Swift; None in Python, etc.). Any function that doesn't return a value implicitly returns Unit.
+
+```kotlin
+fun main() {
+    birthdayGreeting()
+}
+
+fun birthdayGreeting(): Unit {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+```
+
+```kotlin
+//Updated to return string
+fun birthdayGreeting(): String {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+fun main() {
+    val greeting = birthdayGreeting()
+    println(greeting)
+}
+```
+
+## Accepting Parameters
+
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/6545b77c-7482-46c0-9b11-de6284e694c6" />
+
+```kotlin
+//Updated to accept/return string
+fun birthdayGreeting(name: String): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Rover"))
+}
+```
+
+```kotlin
+//Updated to have more than one pararms
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Rover", 5))
+    println(birthdayGreeting("Rex", 2))
+}
+```
+## Named Arguments
+
+```kotlin
+//Updated to show named arguments
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting(name = "Rex", age = 2))
+}
+```
+
+## Default Arguments
+```kotlin
+//Updated to show default parameters
+fun birthdayGreeting(name: String = "Rover", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}
+fun main() {
+    println(birthdayGreeting(name = "Rex", age = 2))
+    println(birthdayGreeting( age = 22))
+}
+```
+
+## Recap
+<img width="661" alt="image" src="https://github.com/user-attachments/assets/658166c9-3459-4fb4-9769-c9146567eec3" />
+
+
+
+

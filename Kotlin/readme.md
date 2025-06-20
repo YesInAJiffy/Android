@@ -16,6 +16,14 @@ val name: String = "Alice"
 
 - Once assigned, `name` cannot be changed.
 - Good for constants or values that shouldn't change.
+- Another Example
+```kotlin
+fun main() {
+    val cartTotal = 0
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+```
 
 ### 2. **Mutable Variable (`var`)**
 Use `var` when the variable **can be reassigned**.
@@ -58,6 +66,17 @@ fun main() {
     println("The sum of $num1 and $num2 is: $sum")
 }
 ```
+
+### Another Example
+```kotlin
+fun main() {
+    val unreadCount = 5
+    val readCount = 100
+    println("You have ${unreadCount + readCount} total messages in your inbox.")
+}
+```
+
+
 
 # Data Types in Kotlin
 

@@ -130,5 +130,55 @@ Use `?` to declare a variable that can hold `null`.
 
 ---
 
+#### Double 
+```kotlin
+fun main() {
+    val trip1: Double = 3.20
+    val trip2: Double = 4.10
+    val trip3: Double = 1.72
+    val totalTripLength: Double = trip1 + trip2 + trip3
+    println("$totalTripLength miles left to destination")
+}
+```
 
+#### String
+```kotlin
+fun main() {
+    val nextMeeting = "Next meeting: "
+    val date = "January 1"
+    val reminder = nextMeeting + date + " at work"
+    println(reminder)
+}
+```
+
+### Boolean
+```kotlin
+fun main() {
+    val notificationsEnabled: Boolean = false
+    println("Are notifications enabled? " + notificationsEnabled)
+}
+```
+
+### Code Comments
+```kotlin
+// This is a comment.
+/*
+ * This is a very long comment that can
+ * take up multiple lines.
+ */
+
+/*
+ * This program displays the number of messages
+ * in the user's inbox.
+ */
+fun main() {
+    // Create a variable for the number of unread messages.
+    var count = 10
+    println("You have $count unread messages.")
+
+    // Decrease the number of messages by 1.
+    count--
+    println("You have $count unread messages.")
+}
+```
 

@@ -30,4 +30,5 @@ val city = "New York"  // Inferred as String
 var score = 100        // Inferred as Int
 ```
 
-Would you like to see examples in a specific context, like Android development or data processing?
+<img width="780" alt="image" src="https://github.com/user-attachments/assets/f2504214-1a03-4ec5-aee1-accbc3c6a44d" />
+

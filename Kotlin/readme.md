@@ -32,3 +32,57 @@ var score = 100        // Inferred as Int
 
 <img width="780" alt="image" src="https://github.com/user-attachments/assets/f2504214-1a03-4ec5-aee1-accbc3c6a44d" />
 
+# Data Types in Kotlin
+
+Kotlin has a rich set of **data types**, which can be broadly categorized into:
+
+---
+
+### 🔹 **Basic Data Types**
+
+| Type       | Description                     | Example             |
+|------------|----------------------------------|---------------------|
+| `Int`      | 32-bit integer                   | `val age: Int = 30` |
+| `Long`     | 64-bit integer                   | `val big: Long = 123456789L` |
+| `Short`    | 16-bit integer                   | `val s: Short = 10` |
+| `Byte`     | 8-bit integer                    | `val b: Byte = 1`   |
+| `Double`   | 64-bit floating point            | `val pi: Double = 3.14` |
+| `Float`    | 32-bit floating point            | `val f: Float = 3.14f` |
+| `Boolean`  | `true` or `false`                | `val isActive: Boolean = true` |
+| `Char`     | A single character               | `val letter: Char = 'A'` |
+| `String`   | A sequence of characters         | `val name: String = "Kotlin"` |
+
+---
+
+### 🔹 **Nullable Types**
+Kotlin distinguishes between nullable and non-nullable types:
+
+```kotlin
+val name: String = "Alice"       // Non-nullable
+val nickname: String? = null     // Nullable
+```
+
+Use `?` to declare a variable that can hold `null`.
+
+---
+
+### 🔹 **Arrays and Collections**
+
+- **Array**: `val numbers = arrayOf(1, 2, 3)`
+- **List**: `val list = listOf("a", "b", "c")`
+- **MutableList**: `val mutableList = mutableListOf(1, 2, 3)`
+- **Set**: `val set = setOf(1, 2, 2, 3)` // Unique elements
+- **Map**: `val map = mapOf("key" to "value")`
+
+---
+
+### 🔹 **Other Types**
+
+- **Any**: The root of the Kotlin class hierarchy (like `Object` in Java).
+- **Unit**: Represents no value (similar to `void` in Java).
+- **Nothing**: Represents a value that never exists (used for functions that throw exceptions).
+
+---
+
+
+

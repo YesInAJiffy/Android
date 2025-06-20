@@ -1,6 +1,11 @@
+
+
 # Defining Variables
 
 In Kotlin, you define variables using either the `val` or `var` keyword:
+
+## Playground to be used
+https://play.kotlinlang.org/
 
 ### 1. **Immutable Variable (`val`)**
 Use `val` when the variable **cannot be reassigned** after it's initialized (like `final` in Java).
@@ -31,6 +36,28 @@ var score = 100        // Inferred as Int
 ```
 
 <img width="780" alt="image" src="https://github.com/user-attachments/assets/f2504214-1a03-4ec5-aee1-accbc3c6a44d" />
+
+### In a Program
+```kotlin
+fun main() {
+    val count: Int = 2
+    println("You have $count unread messages.")
+}
+```
+
+### Variable value fetching in string
+```kotlin
+fun calculateSum(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun main() {
+    val num1 = 10
+    val num2 = 20
+    val sum = calculateSum(num1, num2)
+    println("The sum of $num1 and $num2 is: $sum")
+}
+```
 
 # Data Types in Kotlin
 
